@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ 
+body {
+    background-color: #F0F2F5;
+}
+
+.posicion {
+    margin: 10% 0% 10% 5%;
+    
+}
+
+.imagen {
+    height: 106px;
+    margin: 58px;
+}
+
+.texto {
+    font-size: 28px;
+    font-weight: normal;
+    line-height: 30px;
+    width: 500px;
+    margin-left: 85px;
+       
+}
+
+.formulario {
+    width: 400px;
+    height: 350px;  
+    
+}
+
+.border {
+    border-radius: 8px;
+background: #ffffff;
+box-shadow:  5px 5px 10px #7a7a7a,
+             -5px -5px 10px #ffffff;
+}
+.botonlogin {
+    background: #36A420;
+    color: #fff;
+    font-size: 15px;
+    border-radius: 5px;
+    height: 50px;
+    border: none;
+
+}
+
+
+footer, ul, li{
+    list-style: none;
+    color: #302f2f98;
+    margin: 0 5px;
+    flex-wrap: wrap;
+    
+
+}
+.margen li {
+    margin: 0 10px;
+}

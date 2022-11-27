@@ -4,34 +4,99 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Facebook</title>
+    <title>Facebook - inicia sesi&oacute;n o reg&iacute;strate</title>
     <link rel="stylesheet" href="assents/css/bootstrap.min.css">
     <link rel="shortcut icon" href="assents/img/fb_icon_325x325.png" type="image/x-icon">
+    <link rel="stylesheet" href="assents/css/main.css">
 
 </head>
 <body>
-    <section class="container">
+    <section class="container posicion">
         <div class="row">
         <div class="col-8"> 
-            <img src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg" alt="">
-            <p>Facebook te ayuda a comunicarte y compartir con las personas que forman parte de tu vida.</p>
+            <img src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg" class="imagen" alt="">
+            <p class="texto col-lg-3 col-md-12 col-sm-10 col-12 m-auto d-flex justify-content-center align-items-center">Facebook te ayuda a comunicarte y compartir con las personas que forman parte de tu vida.</p>
         </div>
-        <div class="col-4">
-            <form>
-                <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label">Email address</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <div class="col-lg-3 col-md-12 col-sm-10 col-12 m-auto d-flex justify-content-center align-items-center flex-column">
+            <form  class="formulario border p-3">
+                <div class="mb-1" >
+                  <label for="exampleInputEmail1" class="form-label"></label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Correo electr&oacute;nico o n&uacute;mero de tel&eacute;fono">
                 </div>
                 <div class="mb-3">
-                  <label for="exampleInputPassword1" class="form-label">Password</label>
-                  <input type="password" class="form-control" id="exampleInputPassword1">
+                  <label for="exampleInputPassword1" class="form-label"></label>
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña">
                 </div>
-                <button type="submit" class="btn btn-primary">Iniciar sesi&oacute;n</button>               
+                <button  type="submit" class="btn btn-primary w-100 fw-bold">Iniciar sesi&oacute;n</button>
+                <a class="text-decoration-none d-flex justify-content-center py-3" href="login.com">¿Olvidaste la contraseña?</a>
+                <hr>
+                <div class="d-flex justify-content-center" >
+                    <button type="submit" class="botonlogin px-3 w-75 fw-bold">Crear cuenta nueva</button>
+                </div>
+                
             </form>
+            <div class="text-center  mt-3">   
+                <a class="text-decoration-none link-dark fw-bold" href="https://youtube.com">Crear una p&aacute;gina</a> <span class="ps-1">para una celebridad, una marca o un negocio.</span> 
+            </div> 
         </div>
-    </div>
+        </div>
+    
     </section>
-    <script src="assents/js/bootstrap.bundle.js"></script>
+
+    <footer class="text-bg-light p-2 bg-light">
+        <div class="container w-100">
+        <ul class="d-flex w-100">
+            <li>Español</li>
+            <li>English (US)</li>
+            <li>Français (France)</li>
+            <li>Português (Brasil)</li>
+            <li>Italiano</li>
+            <li>Deutsch</li>
+            <li>العربية</li>
+            <li>हिन्दी</li>
+            <li>中文(简体)</li>
+            <li>日本語</li>  
+            <li>
+                <button type="button">+</button>
+            </li>
+        </ul>
+        <hr>
+        <ul class="d-flex margen flex-wrap">
+            <li>Registrarse</li>
+            <li>Iniciar sesión</li>
+            <li>Messenger</li>
+            <li>Facebook Lite</li>
+            <li>Watch</li>
+            <li>Lugares</li>
+            <li>Juegos</li>
+            <li>Marketplace</li>
+            <li>Meta Pay</li>
+            <li>Oculus</li>
+            <li>Portal</li>
+            <li>Instagram</li>
+            <li>Bulletin</li>
+            <li>Recaudaciones de fondos</li>
+            <li>Servicios</li>
+            <li>Centro de información de votación</li>
+            <li>Grupos</li>
+            <li>Información</li>
+            <li>Crear anuncio</li>
+            <li>Crear página</li>
+            <li>Desarrolladores</li>
+            <li>Empleo</li>
+            <li>Política de privacidad</li>
+            <li>Centro de privacidad</li>
+            <li>Cookies</li>
+            <li>Opciones de anuncios</li>
+            <li>Condiciones</li>
+            <li>Ayuda</li>
+            <li>Subir contactos y no usuarios</li>
+            <li>Configuración</li>
+            <li>Registro de actividad</li>
+        </ul>
+    </div>
+    </footer>
+    <script src="assents/js/bootstrap.bundle.min.js"></script>
     
 </body>
 </html>

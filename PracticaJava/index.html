@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+
+</head>
+
+<body>
+    <div>
+        <h1>Formulario de registro</h1>
+        <form class="row g-3">
+            <div class="col-md-4">
+                <label for="NombreUsuarios" class="form-label">Nombres</label>
+                <input type="text" class="form-control" id="NombreUsuarios" placeholder="Nombres">
+            </div>
+            <div class="col-md-4">
+                <label for="ApellidoUsuarios" class="form-label">Apellidos</label>
+                <input type="text" class="form-control" id="ApellidoUsuarios" placeholder="Apellidos">
+            </div>
+            <div class="col-md-4">
+                <label for="validationServerUsername" class="form-label">Correo electr&oacute;nico</label>
+                <div class="input-group has-validation">
+                    <span class="input-group-text" id="inputGroupPrepend3">@</span>
+                    <input type="text" class="form-control is-invalid" id="validationServerUsername"
+                        placeholder="Correo electr&oacute;nico"
+                        aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
+                    <div id="validationServerUsernameFeedback" class="invalid-feedback">
+                        Please choose a username.
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label for="validationServer03" class="form-label">Ciudad</label>
+                <input type="text" class="form-control is-invalid" id="validationServer03" placeholder="Ciudad"
+                    aria-describedby="validationServer03Feedback" required>
+                <div id="validationServer03Feedback" class="invalid-feedback">
+                    Please provide a valid city.
+                </div>
+            </div>
+            <div class="col-md-3">
+                <label for="validationServer04" class="form-label">Pa&iacute;s</label>
+                <select class="form-select" id="validationServer04" placeholder="Pa&iacute;s"
+                    aria-describedby="validationServer04Feedback" required>
+                    <option selected disabled value="">Pa&iacute;s...</option>
+                    <option value="Afganistán">Afganistán</option>
+                    <option value="Albania">Albania</option>
+                    <option value="Alemania">Alemania</option>
+                    <option value="Andorra">Andorra</option>
+                    <option value="Angola">Angola</option>
+                    <option value="Antigua y Barbuda">Antigua y Barbuda</option>
+                    <option value="Arabia Saudita">Arabia Saudita</option>
+                    <option value="Argelia">Argelia</option>
+                    <option value="Argentina">Argentina</option>
+                    <option value="Armenia">Armenia</option>
+                    <option value="Australia">Australia</option>
+                    <option value="Austria">Austria</option>
+                    <option value="Azerbaiyán">Azerbaiyán</option>
+                    <option value="Bahamas">Bahamas</option>
+                    <option value="Bahrein">Bahrein</option>
+                    <option value="Bangladesh">Bangladesh</option>
+                    <option value="Barbados">Barbados</option>
+                    <option value="Belarús">Belarús</option>
+                    <option value="Bélgica">Bélgica</option>
+                    <option value="Belice">Belice</option>
+                    <option value="Benin">Benin</option>
+                    <option value="Bhután">Bhután</option>
+                    <option value="Bolivia">Bolivia</option>
+                    <option value="Bosnia y Herzegovina">Bosnia y Herzegovina</option>
+                    <option value="Botswana">Botswana</option>
+                    <option value="Brasil">Brasil)</option>
+                    <option value="Brunei Darussalam">Brunei Darussalam</option>
+                    <option value="Bulgaria">Bulgaria</option>
+                    <option value="Burkina Faso">Burkina Faso</option>
+                    <option value="Burundi">Burundi</option>
+                    <option value="Cabo Verde">Cabo Verde</option>
+                    <option value="Camboya">Camboya</option>
+                    <option value="Camerún)">Camerún</option>
+                    <option value="Canadá)">Canadá</option>
+                    <option value="Chad)">Chad</option>
+                    <option value="Chequia">Chequia</option>
+                    <option value="Chile">Chile</option>
+                    <option value="China">China</option>
+                    <option value="Chipre">Chipre</option>
+                    <option value="Colombia">Colombia</option>
+                    <option value="Comoras)">Comoras)</option>
+                    <option value="Congo)">Congo)</option>
+                    <option value="Costa Rica">Costa Rica</option>
+                    <option value="Côte d’Ivoire">Côte d’Ivoire</option>
+                    <option value="Croacia">Croacia</option>
+                    <option value="Cuba">Cuba</option>
+                    <option value="Dinamarca">Dinamarca</option>
+                    <option value="Djibouti">Djibouti</option>
+                    <option value="Dominica">Dominica</option>
+                </select>
+                <div id="validationServer04Feedback" class="invalid-feedback">
+                    Please select a valid state.
+                </div>
+            </div>
+            <div class="col-md-3">
+                <label for="validationServer05" class="form-label">C&oacute;digo postal</label>
+                <input type="text" class="form-control is-invalid" id="validationServer05"
+                    placeholder="C&oacute;digo postal" aria-describedby="validationServer05Feedback" required>
+                <div id="validationServer05Feedback" class="invalid-feedback">
+                    Please provide a valid zip.
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="form-check">
+                    <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3"
+                        aria-describedby="invalidCheck3Feedback" required>
+                    <label class="form-check-label" for="invalidCheck3">
+                        Acepte los t&eacute;rminos y condiciones
+                    </label>
+                    <div id="invalidCheck3Feedback" class="invalid-feedback">
+                        You must agree before submitting.
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <button class="btn btn-primary w-75" type="button" onclick="Completado()">Enviar formulario</button>
+            </div>
+        </form>
+    </div>
+
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
